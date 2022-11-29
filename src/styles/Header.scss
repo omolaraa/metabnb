@@ -1,0 +1,14 @@
+@use './Variables.scss';
+
+.header{
+    display: flex;
+    flex-direction: row;
+
+   nav{
+    ul{
+        li{
+            color: Variables.$text-color;
+        }
+    }
+   }
+}
