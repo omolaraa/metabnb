@@ -12,10 +12,11 @@ const Header = () => {
                     <ul>
                         <li>Home</li>
                         <li>Place to stay</li>
-                        <li>Home</li>
-                        <li>Home</li>
+                        <li>NFTs</li>
+                        <li>Community</li>
                     </ul>
                 </nav>
+                <a href="#" className="btn-purple">Connect wallet</a>
             </heading>
         </div>
     )
