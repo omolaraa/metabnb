@@ -1,0 +1,38 @@
+@use './Variables.scss' as var;
+
+.catalogue-section{
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-gap: 2rem;
+
+    .catalogue{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 1.5rem;
+
+        .catalogue--item{
+            border: var.$border;
+            padding: 1rem;
+            border-radius: 0.938rem; 
+            font-size: 0.75rem;
+
+            .images{
+
+                #heart{
+                    position: absolute;
+                    margin-left: 11.5rem;
+                    margin-top: 1rem;
+                    fill: var.$primary-text-color;
+             }
+            }
+
+            .catalogue--details-top, .catalogue--details-buttom{
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+}
