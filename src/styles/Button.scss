@@ -1,0 +1,19 @@
+@use './Variables.scss' as var;
+
+.btn{ 
+    text-decoration: none;
+    border: none;
+    outline: none;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+   } 
+.btn-purple{
+    background: var.$primary-color;
+    color: var.$text-color2;
+}
+
+.btn-white{
+    background: var.$secondary-color;
+    color: var.$text-color1;
+    border: var.$border;
+}

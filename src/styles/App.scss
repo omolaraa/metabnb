@@ -1,17 +1,48 @@
 @use './Variables.scss' as var;
+@use './Mixins.scss' as mixins;
 *,
 *::after,
 *::before{
     padding: 0;
     margin: 0;
+    // box-sizing: border-box;
 }
 
 html{
     font-size: 1.1rem;
+    // box-sizing: border-box;
 }
+
 
 .container{
     display: flex;
     flex-direction: column;
-    grid-gap: 5rem;
+}
+
+.container-bg{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.3);
+
+}
+
+.header{
+    height: 8rem;
+    display: flex;
+    flex-direction: row; 
+    grid-gap:10rem;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+
+    .logo{
+        #logo-gradient{
+            fill: var.$primary-text-color;
+            -webkit-text-fill-color: var.$primary-color;
+        }
+    }
+
+   nav{
+    @include mixins.nav-lists();
+   }
 }

@@ -1,0 +1,49 @@
+@use './Variables.scss' as var;
+
+@mixin split-screen{
+    display: flex;
+    justify-content: space-around;
+       
+} 
+
+@mixin description($p-width){
+    width: 46%;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 2rem;
+
+
+    h1 {
+        width: 40.375;
+        font-size: 3rem;
+        line-height: 140%;
+        letter-spacing: -0.02rem;
+
+        .h1--color {
+            color: var.$primary-text-color;
+        }
+    }
+
+    p {
+        // width: 39.75;
+        width: $p-width;
+        font-size: 1.5rem;
+        line-height: 2.188rem;
+        text-align: left;
+    }
+
+}
+
+@mixin nav-lists(){
+    ul{
+        display: flex;
+        grid-gap: 3rem;
+        li{
+            list-style: none;
+            a{
+                text-decoration: none;
+                color: var.$text-color1;
+            }
+        }
+    }
+}

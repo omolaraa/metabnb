@@ -1,0 +1,14 @@
+@use './Variables.scss' as var;
+
+.text-ads{
+    background: var.$primary-color;
+    height: 4.375rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    img{
+        width: 13.875rem;
+        height: 3.125rem;
+    }
+}

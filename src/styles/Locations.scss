@@ -1,0 +1,11 @@
+@use './Variables.scss' as var;
+@use './Mixins.scss' as mixins;
+
+.location-lists{
+    @include mixins.nav-lists();
+    display: flex;
+    justify-content: center;
+   grid-gap: 2rem;
+   align-items: center;
+   padding-bottom: 1rem;
+}

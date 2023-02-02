@@ -1,0 +1,52 @@
+@use './Variables.scss' as var;
+@use './Mixins.scss' as mixins;
+
+.wallet--container{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin: 15rem 20rem;
+    z-index: 20;
+}
+
+.wallet{
+    align-self: center;
+    background: var.$secondary-color;
+    border-radius: 1rem;
+
+    &--header{
+        padding: 0.8rem;
+        display: flex;
+        align-items: center;
+        grid-gap: 15rem;
+        border-bottom: var.$border;
+    }
+
+    &--details{
+        padding: 1.6rem;
+        display: grid;
+        grid-gap: 0.8rem;
+
+        .option{
+            padding: 1rem 1.5rem;
+            display: flex;
+            align-items: center;
+            grid-gap: 9rem;
+            border-radius: 1rem;
+            border: var.$border;
+
+            &--left{
+                width: 15rem;
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+}
+#hide{
+    display: none;
+}
+#show{
+    display: flex;
+    flex-direction: column;
+}
